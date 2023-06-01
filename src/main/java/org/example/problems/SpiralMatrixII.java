@@ -12,9 +12,7 @@ public class SpiralMatrixII {
         int rows = matrix.length - 1;
         int cols = matrix[0].length - 1;
         int left = 0;
-        int right = cols;
         int top = 0;
-        int bottom = rows;
         traverse(matrix, top, rows, left, cols, result);
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
