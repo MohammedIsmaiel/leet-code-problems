@@ -52,10 +52,10 @@ public class TextJustification {
                     int spaces = wordIndex == words.length - 1
                             ? 1
                             : (int) Math.ceil((double) allSpaces / wordsCount);
-                    processedString.append(" ".repeat(Math.max(0, Math.min(spaces, allSpaces))));
+                    // processedString.append(" ".repeat(Math.max(0, Math.min(spaces, allSpaces))));
                     allSpaces -= spaces;
                 }
-                processedString.append(" ".repeat(Math.max(0, allSpaces)));
+                // processedString.append(" ".repeat(Math.max(0, allSpaces)));
                 processedStrings.add(processedString.toString());
                 wordsCount = 0;
                 width = 0;

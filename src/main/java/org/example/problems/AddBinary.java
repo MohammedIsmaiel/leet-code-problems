@@ -107,6 +107,12 @@ public class AddBinary {
         return new InnerAddBinary(result, carry);
     }
 
-    record InnerAddBinary(char sum, char carry) {
+    class InnerAddBinary {
+        char sum, carry;
+
+        public InnerAddBinary(char sum, char carry) {
+            this.sum = sum;
+            this.carry = carry;
+        }
     }
 }
